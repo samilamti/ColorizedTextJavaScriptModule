@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style type='text/css'>
+            div {
+                border: solid .15em transparent;
+                border-radius: .8em;
+                padding: .25em;
+                margin: .25em;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <script type='module'>
+            import colorize from './colorize.js'
+
+            import texts from './testdata.js'
+
+            const body = document.body;
+            for (let text of texts) {
+                const el = document.createElement('div');
+                const colors = colorize(text);                
+                el.textContent = `${text} (${colors[0]}, ${colors[1]})`;
+                el.style.backgroundColor = colors[0];
+                el.style.borderColor = colors[1];
+                body.appendChild(el);
+            };
+        </script>
+    </body>
+</html>
