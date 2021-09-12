@@ -1,4 +1,4 @@
-
+// Inspired by https://documentation.red-gate.com/sql-data-catalog/taxonomy/open-taxonomy
 export default ['Information Type', 'Information Classification', 'Applicable Regulation', 'Classification Scope', 'Environment', 'HIPAA Identifier',
     'Owner', 'Primary Juristiction', 'Retention Policy', 'Treatment Intent', 'Where Used',
     'Bank Account Number', 'City', 'County', 'Country', 'Date of Birth', 'Debit/Credit card expiry date', 'Debit/Credit card number', 'Driving license number',
